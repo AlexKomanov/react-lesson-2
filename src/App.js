@@ -1,32 +1,13 @@
 import './App.css';
-import Header from "./components/Header";
+import Header from "./components/header-component/Header";
+import Main from "./components/main-component/Main";
 
 const  App = () => {
   return (
       <body>
-      <header>
-          <div className="wrapper">
-              <div className="header">
-                  <a href="#">
-                      <div className="header-logo"></div>
-                  </a>
-                  <a href="tel:888" className="header-phone"></a>
-                  <div className="header-phonelink"><a href="tel:7(962)556-1234">+7(962)556-1234</a></div>
-              </div>
-          </div>
-      </header>
-      <main>
-          <div className="wrapper">
-              <div className="main">
-                  <h1 className="main-head">Заголовок c уникальным торговым предложение по системе 4U</h1>
-                  <div className="main-small">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру,
-                      верстальщику,
-                      вебмастеру сгенерировать несколько абзацев более.
-                  </div>
-                  <button className="btn main-btn"><span>Подробнее</span></button>
-              </div>
-          </div>
-      </main>
+      <Header/>
+      <Main/>
+
       <section className="features">
           <div className="wrapper">
               <div className="features-wrapper">
@@ -106,9 +87,9 @@ const  App = () => {
       </footer>
 
       </body>
-    // <div className="App">
-    //     <Header/>
-    // </div>
+
+
+
   );
 }
 
